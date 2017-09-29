@@ -1,0 +1,184 @@
+<%@page session="true"%>
+    <%@taglib uri="http://www.springframework.org/tags" prefix="sp"%>
+        <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+            <html version="XHTML+RDFa 1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/1999/xhtml http://www.w3.org/MarkUp/SCHEMA/xhtml-rdfa-2.xsd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:foaf="http://xmlns.com/foaf/0.1/">
+
+            <head data-color="${colorPair}" profile="http://www.w3.org/1999/xhtml/vocab">
+                <title>${results.getTitle()}&mdash;P23 Demo</title>
+                <jsp:include page="inc/header.jsp"></jsp:include>
+            </head>
+
+            <body id="top">
+                <article>
+                    <div id="logoBanner">
+                        <a href="">
+                            <div id="logo">
+                                <!-- placeholder for logo -->
+                            </div>
+                        </a>
+
+                    </div>
+                    <header>
+                        <hgroup>
+                            <div class="p23logo">
+                            </div>
+                            <h1 class="home_header_h1">
+					           <span>Passage 23E</span>
+				            </h1>
+                            <h2>Theatre and Theatricality from the Baltic to the Aegean</h2>
+                        </hgroup>
+                        <div id="abstract">
+                            <div class="value">This site is a first demonstration of the possibilities of linked data technologies within the Passage23E Project.
+                                <br>It uses data from the database of the International Theatre Institute / Mime Centre Berlin about theatre performances shown during the "Fandim Divadlo" international theatre festival in Pilsen.
+                                <br>The interface is based on the open lodview project on GitHub.</div>
+                        </div>
+
+                    </header>
+
+                    <aside class="empty"></aside>
+
+                    <div id="directs">
+
+                        <div class="value">
+                            <h1 class="entry_header">To start navigating through the data you can start from one of the following points of entry:</h1>
+                            <div class="entry_point">
+                                <h2>Cities</h2>
+                                <a href="Pilsen">Pilsen</a>
+                                <br>
+                                <a>Ostrava</a>
+                                <br>
+                                <a>Prague</a>
+                                <br>
+                            </div>
+                            <div class="entry_point">
+                                <h2>Countries</h2>
+                                <a>Czech Republic</a>
+                                <br>
+                                <a>...</a>
+                                <br>
+                                <a>...</a>
+                                <br>
+                            </div>
+                            <div class="entry_point">
+                                <h2>Theatres / Stage Locations</h2>
+                                <a>Divadlo Alfa</a>
+                                <br>
+                                <a>...</a>
+                                <br>
+                                <a>...</a>
+                                <br>
+                            </div>
+                            <div class="entry_point">
+                                <h2>Groups and Ensembles</h2>
+                                <a>...</a>
+                                <br>
+                                <a>...</a>
+                                <br>
+                                <a>...</a>
+                                <br>
+                            </div>
+                            <div class="entry_point">
+                                <h2>Performances</h2>
+                                <a href="v5943">The 42nd Week </a>
+                                <br>
+                                <a>...</a>
+                                <br>
+                                <a>...</a>
+                                <br>
+                            </div>
+                            <div class="entry_point">
+                                <h2>Authors</h2>
+                                <a href="www.google.de">...</a>
+                                <br>
+                                <a>...</a>
+                                <br>
+                                <a>...</a>
+                                <br>
+                            </div>
+                            <div class="entry_point">
+                                <h2>Directors</h2>
+                                <a>...</a>
+                                <br>
+                                <a>...</a>
+                                <br>
+                                <a>...</a>
+                                <br>
+                            </div>
+                            <div class="tableau_viz_container">
+                                <div class="tableau_viz">
+                                    <div class='tableauPlaceholder' id='viz1500831605736' style='position: relative'>
+                                        <noscript>
+                                            <a href='#'><img alt='Origin Countries of attenting Performances ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;Buch1_182&#47;OriginCountries&#47;1_rss.png' style='border: none' /></a>
+                                        </noscript>
+                                        <object class='tableauViz' style='display:none;'>
+                                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                            <param name='site_root' value='' />
+                                            <param name='name' value='Buch1_182&#47;OriginCountries' />
+                                            <param name='tabs' value='no' />
+                                            <param name='toolbar' value='yes' />
+                                            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;Buch1_182&#47;OriginCountries&#47;1.png' />
+                                            <param name='animate_transition' value='yes' />
+                                            <param name='display_static_image' value='yes' />
+                                            <param name='display_spinner' value='yes' />
+                                            <param name='display_overlay' value='yes' />
+                                            <param name='display_count' value='yes' />
+                                            <param name='filter' value='publish=yes' />
+                                        </object>
+                                    </div>
+                                    <script type='text/javascript'>
+                                        var divElement = document.getElementById('viz1500831605736');
+                                        var vizElement = divElement.getElementsByTagName('object')[0];
+                                        vizElement.style.width = '100%';
+                                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                                        var scriptElement = document.createElement('script');
+                                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                                    </script>
+                                </div>
+                                <div class="tableau_viz">
+                                    <div class='tableauPlaceholder' id='viz1500831179878' style='position: relative'>
+                                        <noscript>
+                                            <a href='#'><img alt='Origin Cities ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;Buch1_182&#47;OriginCities&#47;1_rss.png' style='border: none' /></a>
+                                        </noscript>
+                                        <object class='tableauViz' style='display:none;'>
+                                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                            <param name='site_root' value='' />
+                                            <param name='name' value='Buch1_182&#47;OriginCities' />
+                                            <param name='tabs' value='no' />
+                                            <param name='toolbar' value='yes' />
+                                            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;Buch1_182&#47;OriginCities&#47;1.png' />
+                                            <param name='animate_transition' value='yes' />
+                                            <param name='display_static_image' value='yes' />
+                                            <param name='display_spinner' value='yes' />
+                                            <param name='display_overlay' value='yes' />
+                                            <param name='display_count' value='yes' />
+                                            <param name='filter' value='publish=yes' />
+                                        </object>
+                                    </div>
+                                    <script type='text/javascript'>
+                                        var divElement = document.getElementById('viz1500831179878');
+                                        var vizElement = divElement.getElementsByTagName('object')[0];
+                                        vizElement.style.width = '100%';
+                                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                                        var scriptElement = document.createElement('script');
+                                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                                    </script>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    </div>
+
+                    <div id="inverses" class="empty"></div>
+                    <jsp:include page="inc/custom_footer.jsp"></jsp:include>
+                </article>
+                <jsp:include page="inc/footer.jsp"></jsp:include>
+
+            </body>
+
+            </html>
